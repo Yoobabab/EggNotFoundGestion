@@ -12,6 +12,18 @@ Site réservé à Greg et Yvan (studio Egg Not Found, 50/50) : chiffres de toute
 
 **Créer un projet Supabase à part pour la gestion du studio et toutes les autres applis dès qu'on pourra payer un abonnement** (Supabase Pro ≈ 25 $/mois ; l'offre gratuite est limitée à 2 projets actifs, déjà pris par Tikette et Shivr). Ce jour-là : déplacer `admins`, `offres`, `avances`, le bucket `justificatifs` et la console vers ce projet ; chaque appli y fera remonter ses chiffres.
 
+## Contenu du site (v2, 29 oct. 2026, validé par Greg)
+
+- Thème Egg Not Found : noir #0A0A0A, rouge œuf #E8344E, crème #EDE7DC, Space Mono (titres, chiffres) + Space Grotesk ; logo « 404 | EGG NOT FOUND » dessiné en HTML/SVG (fonction `marque`).
+- `donnees/applis.json` : applis et jeux (logo dans `logos/`, couleur, version, dépôt). **Chaque fois qu'on lance une nouvelle appli ou un nouveau jeu avec Claude : l'ajouter ici avec `"statut": "proposee"`** → elle apparaît dans « À CONFIRMER » en transparence avec un œuf qui se craquelle au survol ; un clic la confirme (table `studio_applis`). Mettre à jour `version` à chaque publication.
+- `donnees/a-faire.json` : généré par `python3 outils/faire_a_faire.py <AppliDates/CLAUDE.md> <AppliCard/CLAUDE.md> donnees/a-faire.json <date>` — demandes de Claude (liste `DEMANDES` du script, à tenir à jour à chaque séance : retirer ce qui est fait) + recette (tests) lue dans les CLAUDE.md. Cases cochées gardées dans `studio_coches` par clé ; tâches ajoutées à la main dans `studio_taches`.
+- `donnees/partenaires.json` : état des affiliations (à tenir à jour).
+- Coûts et échéances : table `studio_couts` (modifiable dans la console), alerte à J-15.
+- Robots : API GitHub publique (applidates-pages, AppliCard-donnees).
+- SQL : `AppliDates/supabase/console2.sql` (après console.sql).
+- **Toute modification du site doit aussi être recopiée dans `applidates-pages/console/`** (index.html, donnees/, logos/) tant que tikette.fr/console/ existe.
+- E-mails : logos servis par https://tikette.fr/mail/ (dépôt applidates-pages) ; Tikette et Egg Not Found par la fonction `envoyer-email` (Send Email hook de Supabase Tikette), Shivr par le modèle `AppliCard/supabase/email-code.html`.
+
 ## Règle du studio
 
 Chaque appli a son espace admin (admin@ / contact@eggnotfound.fr) et apparaît dans cette console. Applis à brancher : Shivr, Panier Fantôme, robi.
