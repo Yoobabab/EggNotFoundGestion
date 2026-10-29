@@ -10,14 +10,11 @@ def cle(*parts):
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
     ('tikette', 'Greg', 'Brevo : ajouter le domaine eggnotfound.fr et l’expéditeur « Egg Not Found » <contact@eggnotfound.fr>'),
-    ('tikette', 'Greg', 'Supabase : créer la fonction envoyer-email (Verify JWT désactivé)'),
-    ('tikette', 'Greg', 'Supabase : Authentication › Hooks › Send Email hook vers envoyer-email + secret SEND_EMAIL_HOOK_SECRET'),
-    ('tikette', 'Greg', 'Supabase : lancer supabase/console2.sql (console : applis, à faire, coûts)'),
+    ('studio', 'Greg', 'Supabase (Tikette) : lancer supabase/console3.sql (offres pour toutes les applis)'),
     ('tikette', 'Tous', 'Connexion par SMS : crédits SMS Brevo, fonction envoyer-sms, fournisseur Phone activé, Send SMS hook + SEND_SMS_HOOK_SECRET'),
     ('tikette', 'Tous', 'OVH : redirection de contact@tikette.fr vers contact@eggnotfound.fr'),
     ('tikette', 'Tous', 'Comptes développeur au nom du studio : Apple (99 €/an) et Google (25 $ une fois), avant la sortie'),
     ('tikette', 'Greg', 'GetYourGuide : coordonnées bancaires et SIRET une fois la micro-entreprise créée'),
-    ('studio', 'Greg', 'GitHub › EggNotFoundGestion › Pages : cocher « Enforce HTTPS » dès que possible'),
     ('shivr', 'Greg', 'Supabase de Shivr : coller le nouveau modèle d’e-mail (Magic Link et Confirm signup)'),
     ('shivr', 'Tous', 'Supabase de Shivr : vérifier que les scripts tournois, messages, contact-id, support, ouvertures, ouvertures-controles et echanges-preuves sont lancés'),
 ]

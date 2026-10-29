@@ -20,7 +20,9 @@ Site réservé à Greg et Yvan (studio Egg Not Found, 50/50) : chiffres de toute
 - `donnees/partenaires.json` : état des affiliations (à tenir à jour).
 - Coûts et échéances : table `studio_couts` (modifiable dans la console), alerte à J-15.
 - Robots : API GitHub publique (applidates-pages, AppliCard-donnees).
-- SQL : `AppliDates/supabase/console2.sql` (après console.sql).
+- SQL : `AppliDates/supabase/console2.sql` (après console.sql), puis `console3.sql` (offres par appli : colonne `appli`, `offres_actives()` = Tikette, `offres_actives_de('shivr')` pour les autres).
+- v3 (29 oct. 2026, demandes de Greg) : bouton « Liens rapides » (fenêtre avec logos des sites) ; vue d'ensemble = 4 chiffres (revenus, coûts, abonnés payants, avances) + « À faire maintenant » + « À surveiller » + cartes des applis avec leur étape (`etape` dans applis.json : idée, en cours, en test, en ligne, en pause) ; mot « abonnement / abonnés » partout (« Or » seulement pour Tikette) ; comptes du studio jamais comptés dans les abonnés ; À faire en 2 onglets (À faire par personne Greg / Yvan / Greg et Yvan, Recette par appli et version) ; Offres pour toutes les applis ; montants acceptés avec « € » ou « $ » (`lireMontant`). Contrôle : `rendre3.mjs` (dossier de travail de Claude) rend les 9 pages en ordinateur et téléphone et signale erreurs, « [object », « undefined », « NaN » et débordements.
+- Applis du studio uniquement : Callikoe (projet IRT NETWORK) n'y figure pas.
 - **Toute modification du site doit aussi être recopiée dans `applidates-pages/console/`** (index.html, donnees/, logos/) tant que tikette.fr/console/ existe.
 - E-mails : logos servis par https://tikette.fr/mail/ (dépôt applidates-pages) ; Tikette et Egg Not Found par la fonction `envoyer-email` (Send Email hook de Supabase Tikette), Shivr par le modèle `AppliCard/supabase/email-code.html`.
 
