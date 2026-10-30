@@ -13,6 +13,7 @@ DEMANDES = [
     ('studio', 'Greg', 'Supabase (Tikette) : lancer supabase/console3.sql (offres pour toutes les applis)'),
     ('tikette', 'Tous', 'Connexion par SMS : crédits SMS Brevo, fonction envoyer-sms, fournisseur Phone activé, Send SMS hook + SEND_SMS_HOOK_SECRET'),
     ('tikette', 'Tous', 'OVH : redirection de contact@tikette.fr vers contact@eggnotfound.fr'),
+    ('studio', 'Greg', 'Confirmer la proposition d’Yvan : contact@eggnotfound.fr comme adresse de contact unique de toutes les applis (Tikette l’utilise déjà ; Shivr encore sur contact@shivr.fr)'),
     ('tikette', 'Greg', 'Pages légales : donner à Claude nom, adresse et SIRET de la micro-entreprise dès l’immatriculation (bandeau « version provisoire » jusque-là)'),
     ('tikette', 'Tous', 'Adhérer à un médiateur de la consommation (≈ 30-80 €/an, ex. CM2C, Médicys) avant la sortie de Tikette Or'),
     ('tikette', 'Tous', 'Comptes développeur au nom du studio : Apple (99 €/an) et Google (25 $ une fois), avant la sortie'),
