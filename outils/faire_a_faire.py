@@ -15,7 +15,7 @@ DEMANDES = [
     ('tikette', 'Tous', 'OVH : redirection de contact@tikette.fr vers contact@eggnotfound.fr'),
     ('studio', 'Greg', 'Confirmer la proposition d’Yvan : contact@eggnotfound.fr comme adresse de contact unique de toutes les applis (Tikette l’utilise déjà ; Shivr encore sur contact@shivr.fr)'),
     ('tikette', 'Greg', 'Pages légales : donner à Claude nom, adresse et SIRET de la micro-entreprise dès l’immatriculation (bandeau « version provisoire » jusque-là)'),
-    ('tikette', 'Tous', 'Adhérer à un médiateur de la consommation (≈ 30-80 €/an, ex. CM2C, Médicys) avant la sortie de Tikette Or'),
+    ('tikette', 'Yvan', 'Adhérer au médiateur de la consommation CM2C (cm2c.net, ≈ 48 € pour 3 ans) dès l’immatriculation de la micro-entreprise, avant la vente de Tikette Or ; garder l’attestation (PDF) et donner à Claude le nom et l’adresse du médiateur pour les CGV'),
     ('tikette', 'Tous', 'Comptes développeur au nom du studio : Apple (99 €/an) et Google (25 $ une fois), avant la sortie'),
     ('tikette', 'Greg', 'GetYourGuide : coordonnées bancaires et SIRET une fois la micro-entreprise créée'),
     ('shivr', 'Greg', 'Supabase de Shivr : coller le nouveau modèle d’e-mail (Magic Link et Confirm signup)'),
