@@ -9,13 +9,6 @@
    "titre": "Brevo : ajouter le domaine eggnotfound.fr et l’expéditeur « Egg Not Found » <contact@eggnotfound.fr>"
   },
   {
-   "cle": "demande:studio:4b61cbe43e",
-   "groupe": "demande",
-   "appli": "studio",
-   "qui": "Greg",
-   "titre": "Supabase (Tikette) : lancer supabase/console3.sql (offres pour toutes les applis)"
-  },
-  {
    "cle": "demande:tikette:1269c716ab",
    "groupe": "demande",
    "appli": "tikette",
@@ -51,11 +44,11 @@
    "titre": "Adhérer au médiateur de la consommation CM2C (cm2c.net, ≈ 48 € pour 3 ans) dès l’immatriculation de la micro-entreprise, avant la vente de Tikette Or ; garder l’attestation (PDF) et donner à Claude le nom et l’adresse du médiateur pour les CGV"
   },
   {
-   "cle": "demande:tikette:757eb73e30",
+   "cle": "demande:tikette:8fb7b4ac64",
    "groupe": "demande",
    "appli": "tikette",
    "qui": "Tous",
-   "titre": "Comptes développeur au nom du studio : Apple (99 €/an) et Google (25 $ une fois), avant la sortie"
+   "titre": "Comptes développeur au nom du studio : Apple (99 €/an, ouvre TestFlight pour tester sur iPhone) et Google (25 $ une fois), vers la sortie"
   },
   {
    "cle": "demande:tikette:ed8f96c7cf",
@@ -114,13 +107,6 @@
    "titre": "Avant de vendre l’appli : remplacer la météo Open-Meteo (gratuite seulement sans usage commercial) par Météo-France"
   },
   {
-   "cle": "demande:shivr:69e6b112e2",
-   "groupe": "demande",
-   "appli": "shivr",
-   "qui": "Tous",
-   "titre": "Supabase de Shivr : vérifier que les scripts tournois, messages, contact-id, support, ouvertures, ouvertures-controles et echanges-preuves sont lancés"
-  },
-  {
    "cle": "demande:hearthaven:592fdc5c9f",
    "groupe": "demande",
    "appli": "hearthaven",
@@ -147,6 +133,13 @@
    "appli": "hearthaven",
    "qui": "Tous",
    "titre": "Générique de fin d’Hearthaven : créditer Fish_233 (godotshaders.com) et Rune Skovbo Johansen (filtre d’érosion, licence MPL 2.0)"
+  },
+  {
+   "cle": "demande:shivr:69e6b112e2",
+   "groupe": "demande",
+   "appli": "shivr",
+   "qui": "Tous",
+   "titre": "Supabase de Shivr : vérifier que les scripts tournois, messages, contact-id, support, ouvertures, ouvertures-controles et echanges-preuves sont lancés"
   },
   {
    "cle": "recette:tikette:v0.32:21453670cb",
@@ -629,70 +622,6 @@
    "titre": "photo envoyée puis validée qui apparaît sur la fiche le lendemain (après le robot de nuit) ; lancer supabase/photos-annulation.sql puis essayer « Validées récemment »."
   },
   {
-   "cle": "recette:applinature:v0.10.1:2356b8090a",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.10.1",
-   "titre": "l'appli s'ouvre à nouveau dans Expo Go (passage à Expo SDK 58)"
-  },
-  {
-   "cle": "recette:applinature:v0.10:9e7adc5c9a",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.10",
-   "titre": "Aujourd'hui : la balade du jour se prépare toute seule, choisir 1 h / 2 h / 3 h, « Partir » ouvre l'aperçu (carte, relief, étapes)"
-  },
-  {
-   "cle": "recette:applinature:v0.10:838086beb9",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.10",
-   "titre": "bouton rond « Partir » au centre de la barre : 3 balades prêtes, mes boucles, « Choisir mes envies »"
-  },
-  {
-   "cle": "recette:applinature:v0.10:dbddc5b006",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.10",
-   "titre": "balade en cours : carte plein écran, guidage, « J'ai trouvé quelque chose », « Retour au départ », « Terminer »"
-  },
-  {
-   "cle": "recette:applinature:v0.10:452321b871",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.10",
-   "titre": "onglet Mes balades : refaire une boucle, « Autre chemin », journal des balades"
-  },
-  {
-   "cle": "recette:applinature:v0.10:0c2ff06435",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.10",
-   "titre": "carte : tracé avec flèches de sens, bornes kilométriques, étapes en pastilles"
-  },
-  {
-   "cle": "recette:applinature:v0.10:7ec8dc7386",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.10",
-   "titre": "police Figtree : lisible et en accord avec les couleurs"
-  },
-  {
-   "cle": "recette:applinature:v0.6:0ef6bf522f",
-   "groupe": "recette",
-   "appli": "applinature",
-   "qui": "Tous",
-   "version": "v0.6",
-   "titre": "IA : photo en gros plan d'une feuille, d'une fleur ou d'un champignon (choisir le groupe) : la bonne espèce est-elle dans les 3 idées ?"
-  },
-  {
    "cle": "recette:hearthaven:v0.1:71316a9a98",
    "groupe": "recette",
    "appli": "hearthaven",
@@ -779,6 +708,70 @@
    "qui": "Yvan",
    "version": "v0.1",
    "titre": "Les empreintes de pas s’assombrissent à l’ombre, sous les nuages et la nuit"
+  },
+  {
+   "cle": "recette:applinature:v0.10.1:2356b8090a",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.10.1",
+   "titre": "l'appli s'ouvre à nouveau dans Expo Go (passage à Expo SDK 58)"
+  },
+  {
+   "cle": "recette:applinature:v0.10:9e7adc5c9a",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.10",
+   "titre": "Aujourd'hui : la balade du jour se prépare toute seule, choisir 1 h / 2 h / 3 h, « Partir » ouvre l'aperçu (carte, relief, étapes)"
+  },
+  {
+   "cle": "recette:applinature:v0.10:838086beb9",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.10",
+   "titre": "bouton rond « Partir » au centre de la barre : 3 balades prêtes, mes boucles, « Choisir mes envies »"
+  },
+  {
+   "cle": "recette:applinature:v0.10:dbddc5b006",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.10",
+   "titre": "balade en cours : carte plein écran, guidage, « J'ai trouvé quelque chose », « Retour au départ », « Terminer »"
+  },
+  {
+   "cle": "recette:applinature:v0.10:452321b871",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.10",
+   "titre": "onglet Mes balades : refaire une boucle, « Autre chemin », journal des balades"
+  },
+  {
+   "cle": "recette:applinature:v0.10:0c2ff06435",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.10",
+   "titre": "carte : tracé avec flèches de sens, bornes kilométriques, étapes en pastilles"
+  },
+  {
+   "cle": "recette:applinature:v0.10:7ec8dc7386",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.10",
+   "titre": "police Figtree : lisible et en accord avec les couleurs"
+  },
+  {
+   "cle": "recette:applinature:v0.6:0ef6bf522f",
+   "groupe": "recette",
+   "appli": "applinature",
+   "qui": "Tous",
+   "version": "v0.6",
+   "titre": "IA : photo en gros plan d'une feuille, d'une fleur ou d'un champignon (choisir le groupe) : la bonne espèce est-elle dans les 3 idées ?"
   }
  ]
 }
