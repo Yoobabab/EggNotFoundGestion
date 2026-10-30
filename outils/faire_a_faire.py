@@ -43,6 +43,8 @@ RECETTE_HEARTHAVEN = [
     ('v0.1', 'Nuages lents, ombres en petites taches sur le sol'),
     ('v0.1', 'Objets à ramasser : brillance sans halo au sol, posés à plat'),
     ('v0.1', 'Plus de ligne nette entre les textures de la montagne'),
+    ('v0.1', 'Plus de ligne droite au sol où une ombre s’arrête net (ombres de palmiers continues)'),
+    ('v0.1', 'Les empreintes de pas s’assombrissent à l’ombre, sous les nuages et la nuit'),
 ]
 
 def recette_tikette(texte):
