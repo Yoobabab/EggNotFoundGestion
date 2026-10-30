@@ -28,6 +28,11 @@ Site réservé à Greg et Yvan (studio Egg Not Found, 50/50) : chiffres de toute
 - **Toute modification du site doit aussi être recopiée dans `applidates-pages/console/`** (index.html, donnees/, logos/) tant que tikette.fr/console/ existe.
 - E-mails : logos servis par https://tikette.fr/mail/ (dépôt applidates-pages) ; Tikette et Egg Not Found par la fonction `envoyer-email` (Send Email hook de Supabase Tikette), Shivr par le modèle `AppliCard/supabase/email-code.html`.
 
+## Page Objectifs (30 oct. 2026, demande de Greg)
+
+- `objectifs.html` : départs prévus (Greg septembre 2029, Yvan avril 2030 ; 24 000 € nets chacun la 1re année puis 3 000 €/mois dès 2031), courbe des encaissements sur 12 mois, dividendes et « qui fait les revenus » au choix pessimiste / réaliste / optimiste, priorités des 9 projets, temps de maintenance. Affichée dans la console (onglet rouge « Objectifs » sous « Vue d'ensemble », page `#objectifs`, `objectifs.html?console=1` cache le logo). Chiffres repris du document « Priorités et plans de revenus » (https://claude.ai/artifact/N6tbNcaKPr27u7CyhjN6CR) : **à mettre à jour ensemble** (tableau `PROJETS` du fichier). Copie publiée aussi en artefact : https://claude.ai/artifact/DUdL22Z4nYo3VVAqyCicbC
+- Le fichier est public comme le reste du site (pas de données Supabase) : quelqu'un qui connaît l'adresse exacte peut le lire.
+
 ## Règle du studio
 
 Chaque appli a son espace admin (admin@ / contact@eggnotfound.fr) et apparaît dans cette console. Applis à brancher : Shivr, Panier Fantôme, robi. AppliNature : demandes, recette et robot IA dans la console (30 oct. 2026) ; chiffres pas encore reliés (pas de serveur).
