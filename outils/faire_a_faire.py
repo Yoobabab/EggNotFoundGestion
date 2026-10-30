@@ -25,7 +25,24 @@ DEMANDES = [
     ('applinature', 'Tous', 'Choisir le nom définitif d’AppliNature'),
     ('applinature', 'Tous', 'Décider où mettre les comptes et les signalements d’AppliNature (offre Supabase gratuite limitée à 2 projets, déjà pris par Tikette et Shivr)'),
     ('applinature', 'Tous', 'Avant de vendre l’appli : remplacer la météo Open-Meteo (gratuite seulement sans usage commercial) par Météo-France'),
+    ('hearthaven', 'Yvan', 'Relancer Hearthaven (dossier « Hearthaven » du bureau) et faire la recette de la version 0.1 ; envoyer une capture à Claude si quelque chose cloche'),
+    ('hearthaven', 'Yvan', 'Choisir la prochaine grande étape d’Hearthaven : fabrication sur la nappe, autres personnages, carte et boussole, ou biomes et animaux'),
+    ('hearthaven', 'Tous', 'Décider si on sauvegarde la version Godot d’Hearthaven sur GitHub (dépôt Hearthhaven, pas à jour depuis le 27 oct.)'),
+    ('hearthaven', 'Tous', 'Générique de fin d’Hearthaven : créditer Fish_233 (godotshaders.com) et Rune Skovbo Johansen (filtre d’érosion, licence MPL 2.0)'),
     ('shivr', 'Tous', 'Supabase de Shivr : vérifier que les scripts tournois, messages, contact-id, support, ouvertures, ouvertures-controles et echanges-preuves sont lancés'),
+]
+
+# Recette d'Hearthaven (pas de CLAUDE.md dans un dépôt : le projet Godot vit sur le PC d'Yvan). Mettre à jour à chaque version.
+RECETTE_HEARTHAVEN = [
+    ('v0.1', 'Plus de carrés sur le sol, près de la plage comme sur la roche'),
+    ('v0.1', 'Plus de carrés ni de cassures dans la mer, au bord comme au large'),
+    ('v0.1', 'Gros rochers et souches sur une pente : le pied se fond dans le sol, sans bande sombre'),
+    ('v0.1', 'Esprit : yeux visibles qui clignent, bouche visible, miel bien doré sur le haut de la tête'),
+    ('v0.1', 'Esprit assez opaque (on ne voit plus le décor à travers son corps)'),
+    ('v0.1', 'On ne traverse plus les rochers, souches, troncs couchés ni les troncs d’arbres ; on passe toujours dans les buissons, fleurs et herbes'),
+    ('v0.1', 'Nuages lents, ombres en petites taches sur le sol'),
+    ('v0.1', 'Objets à ramasser : brillance sans halo au sol, posés à plat'),
+    ('v0.1', 'Plus de ligne nette entre les textures de la montagne'),
 ]
 
 def recette_tikette(texte):
@@ -78,5 +95,7 @@ for v, t in recette_shivr(shi):
 if len(sys.argv) > 5:
     for v, t in recette_applinature(open(sys.argv[5]).read()):
         sortie['elements'].append({'cle': cle('recette', 'applinature', v, t), 'groupe': 'recette', 'appli': 'applinature', 'qui': 'Tous', 'version': v, 'titre': propre(t)})
+for v, t in RECETTE_HEARTHAVEN:
+    sortie['elements'].append({'cle': cle('recette', 'hearthaven', v, t), 'groupe': 'recette', 'appli': 'hearthaven', 'qui': 'Yvan', 'version': v, 'titre': t})
 json.dump(sortie, open(sys.argv[3], 'w'), ensure_ascii=False, indent=1)
 print(len(sortie['elements']), 'éléments')
