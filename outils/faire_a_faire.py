@@ -1,6 +1,6 @@
 """Construit donnees/a-faire.json pour la console Egg Not Found :
 - « demandes » : ce que Claude a demandé de faire (tenu à la main dans DEMANDES ci-dessous) ;
-- « recette » : les tests à faire, lus dans les CLAUDE.md de Tikette et Shivr.
+- « recette » : les tests à faire, lus dans les CLAUDE.md de Tikette, Shivr et AppliNature (5e argument, facultatif).
 Chaque élément a une clé stable : la console garde les cases cochées par clé (table studio_coches)."""
 import json, re, hashlib, sys
 
@@ -19,6 +19,12 @@ DEMANDES = [
     ('tikette', 'Tous', 'Comptes développeur au nom du studio : Apple (99 €/an) et Google (25 $ une fois), avant la sortie'),
     ('tikette', 'Greg', 'GetYourGuide : coordonnées bancaires et SIRET une fois la micro-entreprise créée'),
     ('shivr', 'Greg', 'Supabase de Shivr : coller le nouveau modèle d’e-mail (Magic Link et Confirm signup)'),
+    ('applinature', 'Greg', 'Tester AppliNature v0.10 sur l’iPhone (bouton « Partir », balade du jour, nouvelle police) et dire à Claude ce qui gêne'),
+    ('applinature', 'Greg', 'Prendre une série de photos en gros plan (feuilles, fleurs, champignons) pour mesurer l’IA sur le terrain'),
+    ('applinature', 'Greg', 'GitHub : activer la page publique des défis (dépôt AppliNature-ia › Settings › Pages › branche main, dossier /docs)'),
+    ('applinature', 'Tous', 'Choisir le nom définitif d’AppliNature'),
+    ('applinature', 'Tous', 'Décider où mettre les comptes et les signalements d’AppliNature (offre Supabase gratuite limitée à 2 projets, déjà pris par Tikette et Shivr)'),
+    ('applinature', 'Tous', 'Avant de vendre l’appli : remplacer la météo Open-Meteo (gratuite seulement sans usage commercial) par Météo-France'),
     ('shivr', 'Tous', 'Supabase de Shivr : vérifier que les scripts tournois, messages, contact-id, support, ouvertures, ouvertures-controles et echanges-preuves sont lancés'),
 ]
 
@@ -51,6 +57,12 @@ def recette_shivr(texte):
     items.sort(key=lambda x: -float(x[0][1:].split('.')[1]))
     return items
 
+def recette_applinature(texte):
+    if '## À tester par le porteur' not in texte:
+        return []
+    sec = texte.split('## À tester par le porteur', 1)[1].split('\n## ', 1)[0]
+    return [(m.group(1), m.group(2)) for m in (re.match(r'- (v[0-9.]+) : (.*)', l) for l in sec.splitlines()) if m]
+
 def propre(t):
     return re.sub(r'`([^`]*)`', r'\1', re.sub(r'\*\*', '', t)).strip()
 
@@ -63,5 +75,8 @@ for v, t in recette_tikette(tik):
     sortie['elements'].append({'cle': cle('recette', 'tikette', v, t), 'groupe': 'recette', 'appli': 'tikette', 'qui': 'Tous', 'version': v, 'titre': propre(t)})
 for v, t in recette_shivr(shi):
     sortie['elements'].append({'cle': cle('recette', 'shivr', v, t), 'groupe': 'recette', 'appli': 'shivr', 'qui': 'Tous', 'version': v, 'titre': propre(t)})
+if len(sys.argv) > 5:
+    for v, t in recette_applinature(open(sys.argv[5]).read()):
+        sortie['elements'].append({'cle': cle('recette', 'applinature', v, t), 'groupe': 'recette', 'appli': 'applinature', 'qui': 'Tous', 'version': v, 'titre': propre(t)})
 json.dump(sortie, open(sys.argv[3], 'w'), ensure_ascii=False, indent=1)
 print(len(sortie['elements']), 'éléments')

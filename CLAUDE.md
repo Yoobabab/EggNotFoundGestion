@@ -16,10 +16,10 @@ Site réservé à Greg et Yvan (studio Egg Not Found, 50/50) : chiffres de toute
 
 - Thème Egg Not Found : noir #0A0A0A, rouge œuf #E8344E, crème #EDE7DC, Space Mono (titres, chiffres) + Space Grotesk ; logo « 404 | EGG NOT FOUND » dessiné en HTML/SVG (fonction `marque`).
 - `donnees/applis.json` : applis et jeux (logo dans `logos/`, couleur, version, dépôt). **Chaque fois qu'on lance une nouvelle appli ou un nouveau jeu avec Claude : l'ajouter ici avec `"statut": "proposee"`** → elle apparaît dans « À CONFIRMER » en transparence avec un œuf qui se craquelle au survol ; un clic la confirme (table `studio_applis`). Mettre à jour `version` à chaque publication.
-- `donnees/a-faire.json` : généré par `python3 outils/faire_a_faire.py <AppliDates/CLAUDE.md> <AppliCard/CLAUDE.md> donnees/a-faire.json <date>` — demandes de Claude (liste `DEMANDES` du script, à tenir à jour à chaque séance : retirer ce qui est fait) + recette (tests) lue dans les CLAUDE.md. Cases cochées gardées dans `studio_coches` par clé ; tâches ajoutées à la main dans `studio_taches`.
+- `donnees/a-faire.json` : généré par `python3 outils/faire_a_faire.py <AppliDates/CLAUDE.md> <AppliCard/CLAUDE.md> donnees/a-faire.json <date> <AppliNature/CLAUDE.md>` — demandes de Claude (liste `DEMANDES` du script, à tenir à jour à chaque séance : retirer ce qui est fait) + recette (tests) lue dans les CLAUDE.md. Cases cochées gardées dans `studio_coches` par clé ; tâches ajoutées à la main dans `studio_taches`.
 - `donnees/partenaires.json` : état des affiliations (à tenir à jour).
 - Coûts et échéances : table `studio_couts` (modifiable dans la console), alerte à J-15.
-- Robots : API GitHub publique (applidates-pages, AppliCard-donnees).
+- Robots : API GitHub publique (applidates-pages, AppliCard-donnees, AppliNature-ia).
 - SQL : `AppliDates/supabase/console2.sql` (après console.sql), puis `console3.sql` (offres par appli : colonne `appli`, `offres_actives()` = Tikette, `offres_actives_de('shivr')` pour les autres).
 - v3 (29 oct. 2026, demandes de Greg) : bouton « Liens rapides » (fenêtre avec logos des sites) ; vue d'ensemble = 4 chiffres (revenus, coûts, abonnés payants, avances) + « À faire maintenant » + « À surveiller » + cartes des applis avec leur étape (`etape` dans applis.json : idée, en cours, en test, en ligne, en pause) ; mot « abonnement / abonnés » partout (« Or » seulement pour Tikette) ; comptes du studio jamais comptés dans les abonnés ; À faire en 2 onglets (À faire par personne Greg / Yvan / Greg et Yvan, Recette par appli et version) ; Offres pour toutes les applis ; montants acceptés avec « € » ou « $ » (`lireMontant`). Contrôle : `rendre3.mjs` (dossier de travail de Claude) rend les 9 pages en ordinateur et téléphone et signale erreurs, « [object », « undefined », « NaN » et débordements.
 - Applis du studio uniquement : Callikoe (projet IRT NETWORK) n'y figure pas.
@@ -28,4 +28,4 @@ Site réservé à Greg et Yvan (studio Egg Not Found, 50/50) : chiffres de toute
 
 ## Règle du studio
 
-Chaque appli a son espace admin (admin@ / contact@eggnotfound.fr) et apparaît dans cette console. Applis à brancher : Shivr, Panier Fantôme, robi.
+Chaque appli a son espace admin (admin@ / contact@eggnotfound.fr) et apparaît dans cette console. Applis à brancher : Shivr, Panier Fantôme, robi. AppliNature : demandes, recette et robot IA dans la console (30 oct. 2026) ; chiffres pas encore reliés (pas de serveur).
