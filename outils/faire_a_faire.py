@@ -25,7 +25,7 @@ DEMANDES = [
     ('applinature', 'Tous', 'Décider où mettre les comptes et les signalements d’AppliNature (offre Supabase gratuite limitée à 2 projets, déjà pris par Tikette et Shivr)'),
     ('applinature', 'Tous', 'Avant de vendre l’appli : remplacer la météo Open-Meteo (gratuite seulement sans usage commercial) par Météo-France'),
     ('hearthaven', 'Yvan', 'Relancer Hearthaven (dossier « Hearthaven » du bureau) et faire la recette de la version 0.1 ; envoyer une capture à Claude si quelque chose cloche'),
-    ('hearthaven', 'Yvan', 'Choisir la prochaine grande étape d’Hearthaven : fabrication sur la nappe, autres personnages, carte et boussole, ou biomes et animaux'),
+    ('hearthaven', 'Yvan', 'Choisir la prochaine grande étape d’Hearthaven : autres personnages, carte et boussole, ou biomes et animaux'),
     ('hearthaven', 'Tous', 'Décider si on sauvegarde la version Godot d’Hearthaven sur GitHub (dépôt Hearthhaven, pas à jour depuis le 27 oct.)'),
     ('hearthaven', 'Tous', 'Générique de fin d’Hearthaven : créditer Fish_233 (godotshaders.com) et Rune Skovbo Johansen (filtre d’érosion, licence MPL 2.0)'),
     ('shivr', 'Tous', 'Supabase de Shivr : vérifier que les scripts tournois, messages, contact-id, support, ouvertures, ouvertures-controles et echanges-preuves sont lancés'),
@@ -44,6 +44,9 @@ RECETTE_HEARTHAVEN = [
     ('v0.1', 'Plus de ligne nette entre les textures de la montagne'),
     ('v0.1', 'Plus de ligne droite au sol où une ombre s’arrête net (ombres de palmiers continues)'),
     ('v0.1', 'Les empreintes de pas s’assombrissent à l’ombre, sous les nuages et la nuit'),
+    ('v0.1', 'Ceinture à droite : le rabat ouvre la sacoche, la nappe est dans la première poche, les outils dans les suivantes'),
+    ('v0.1', 'Nappe : elle se déroule au sol, on y pose des objets, « Assembler » fait tourbillonner les objets et l’outil apparaît'),
+    ('v0.1', 'Carnet : il s’ouvre comme un vrai livre (la couverture se rabat), seule la feuille de papier tourne, sans trous'),
 ]
 
 def recette_tikette(texte):
