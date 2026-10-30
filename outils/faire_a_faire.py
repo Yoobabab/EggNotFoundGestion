@@ -9,7 +9,8 @@ def cle(*parts):
 
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
-    ('tikette', 'Tous', 'Connexion par SMS : crédits SMS Brevo, fonction envoyer-sms, fournisseur Phone activé, Send SMS hook + SEND_SMS_HOOK_SECRET'),
+    ('tikette', 'Greg', 'SMS : suivre la validation de l’expéditeur « Tikette » chez Brevo (Paramètres › SMS Sender ID), puis faire le test du vrai SMS de connexion (remis à plus tard le 30 oct.)'),
+    ('tikette', 'Tous', 'Avant la sortie : retirer les numéros de test de Supabase (Sign In / Providers › Phone › Test Phone Numbers), sauf celui donné aux testeurs d’Apple et Google'),
     ('tikette', 'Tous', 'OVH : redirection de contact@tikette.fr vers contact@eggnotfound.fr'),
     ('studio', 'Tous', 'Décider ensemble la proposition d’Yvan : contact@eggnotfound.fr comme adresse de contact unique de toutes les applis (Tikette l’utilise déjà ; Shivr encore sur contact@shivr.fr)'),
     ('tikette', 'Greg', 'Pages légales : donner à Claude nom, adresse et SIRET de la micro-entreprise dès l’immatriculation (bandeau « version provisoire » jusque-là)'),
