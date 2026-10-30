@@ -11,7 +11,6 @@ def cle(*parts):
 DEMANDES = [
     ('tikette', 'Greg', 'SMS : suivre la validation de l’expéditeur « Tikette » chez Brevo (Paramètres › SMS Sender ID), puis faire le test du vrai SMS de connexion (remis à plus tard le 30 oct.)'),
     ('tikette', 'Tous', 'Avant la sortie : retirer les numéros de test de Supabase (Sign In / Providers › Phone › Test Phone Numbers), sauf celui donné aux testeurs d’Apple et Google'),
-    ('tikette', 'Tous', 'OVH : redirection de contact@tikette.fr vers contact@eggnotfound.fr'),
     ('studio', 'Tous', 'Décider ensemble la proposition d’Yvan : contact@eggnotfound.fr comme adresse de contact unique de toutes les applis (Tikette l’utilise déjà ; Shivr encore sur contact@shivr.fr)'),
     ('tikette', 'Greg', 'Pages légales : donner à Claude nom, adresse et SIRET de la micro-entreprise dès l’immatriculation (bandeau « version provisoire » jusque-là)'),
     ('tikette', 'Yvan', 'Adhérer au médiateur de la consommation CM2C (cm2c.net, ≈ 48 € pour 3 ans) dès l’immatriculation de la micro-entreprise, avant la vente de Tikette Or ; garder l’attestation (PDF) et donner à Claude le nom et l’adresse du médiateur pour les CGV'),
