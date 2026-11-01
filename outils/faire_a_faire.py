@@ -9,11 +9,10 @@ def cle(*parts):
 
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
-    ('tikette', 'Greg', 'Connexion par e-mail : vérifier Supabase › Email › Email OTP Length = 6, puis tester Profil › Se connecter › e-mail (code « Ton code Tikette »)'),
     ('studio', 'Tous', "Toutes les applis du studio : mêmes choix de connexion que Tikette (numéro, Apple, Google, Facebook, e-mail) ; projets Google Cloud et Meta au nom d'admin@eggnotfound.fr, une appli par projet"),
     ('tikette', 'Yvan', "Connexion Facebook (le compte Facebook de Greg est bloqué « appareil inhabituel ») : avec ton Facebook, créer l'appli « Tikette » sur developers.facebook.com (cas d'usage Facebook Login, e-mail de contact admin@eggnotfound.fr, portefeuille business « Egg Not Found » si possible), ajouter Greg en admin, puis prévenir Claude pour la suite (permission email, adresse de retour, mise en ligne, fournisseur dans Supabase) ; bouton Facebook caché dans Tikette en attendant"),
     ('tikette', 'Greg', 'Vraie version : dans Supabase › Apple, ajouter l'identifiant de l'appli Tikette à côté de host.exp.Exponent (une fois le compte Apple développeur pris)'),
-    ('tikette', 'Greg', 'SMS : suivre la validation de l’expéditeur « Tikette » chez Brevo (Paramètres › SMS Sender ID), puis faire le test du vrai SMS de connexion (remis à plus tard le 30 oct.)'),
+    ('tikette', 'Greg', 'SMS : Brevo exige un numéro SIREN pour l’expéditeur « Tikette » → dès la micro-entreprise créée, renvoyer la demande (Paramètres › SMS Sender ID) avec le SIREN, puis tester le vrai SMS de connexion'),
     ('tikette', 'Tous', 'Avant la sortie : retirer les numéros de test de Supabase (Sign In / Providers › Phone › Test Phone Numbers), sauf celui donné aux testeurs d’Apple et Google'),
     ('studio', 'Tous', 'Décider ensemble la proposition d’Yvan : contact@eggnotfound.fr comme adresse de contact unique de toutes les applis (Tikette l’utilise déjà ; Shivr encore sur contact@shivr.fr)'),
     ('tikette', 'Greg', 'Pages légales : donner à Claude nom, adresse et SIRET de la micro-entreprise dès l’immatriculation (bandeau « version provisoire » jusque-là)'),
