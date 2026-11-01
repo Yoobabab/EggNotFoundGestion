@@ -9,6 +9,7 @@ def cle(*parts):
 
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
+    ('guinche', 'Yvan', 'Connexion Facebook de Guinche : avec ton Facebook, créer l’appli « Guinche » sur developers.facebook.com (cas d’usage Facebook Login, e-mail de contact admin@eggnotfound.fr, portefeuille business « Egg Not Found » si possible), ajouter Greg en admin, puis prévenir Claude pour la suite (adresse de retour, fournisseur dans Supabase)'),
     ('studio', 'Greg', 'Clés SMTP Brevo à renouveler (elles expirent au bout d’un an, sinon les e-mails de connexion ne partent plus) : « supabase » le 9 oct. 2027, « applibd » le 11 oct. 2027, « Applidates » (Tikette) le 12 oct. 2027, « guinche » vers le 1er nov. 2027 → Brevo › SMTP & API › SMTP › nouvelle clé, puis la recoller dans Supabase › Authentication › Emails › SMTP du bon projet'),
     ('guinche', 'Greg', 'Supabase de Guinche : finir les réglages (modèles d’e-mail « Confirm signup » et « Magic Link » avec le code, fonction connexion-pseudo avec « Verify JWT » décoché, adresses de retour exp://** et guinche://**, connexion anonyme désactivée), puis créer son compte dans l’appli'),
     ('studio', 'Tous', "Toutes les applis du studio : mêmes choix de connexion que Tikette (numéro, Apple, Google, Facebook, e-mail) ; projets Google Cloud et Meta au nom d'admin@eggnotfound.fr, une appli par projet"),
@@ -36,6 +37,24 @@ DEMANDES = [
 ]
 
 # Recette d'Hearthaven (pas de CLAUDE.md dans un dépôt : le projet Godot vit sur le PC d'Yvan). Mettre à jour à chaque version.
+RECETTE_GUINCHE = [
+    ('v0.2', 'Créer un compte par e-mail : le code arrive (e-mail aux couleurs de Guinche) et il marche'),
+    ('v0.2', 'Se déconnecter puis se reconnecter avec son pseudo et son mot de passe : les soirées sont toujours là'),
+    ('v0.2', 'Mot de passe oublié : le code arrive, le nouveau mot de passe est enregistré'),
+    ('v0.2', 'Profil : photo, prénom, nom, pseudo, ville ; une date de naissance de moins de 15 ans est refusée'),
+    ('v0.2', 'Ambiance de l’appli : changer de couleur, toute l’appli suit'),
+    ('v0.2', 'Nouvelle soirée : choisir un thème de soirée (ex. Années 80), la carte change en direct avec le bon décor et la bonne police'),
+    ('v0.2', 'Choisir une date dans 2 mois en quelques appuis (flèches du calendrier) ; heure du soir, puis « Autre heure »'),
+    ('v0.2', 'Lieu : les suggestions d’adresse apparaissent pendant qu’on tape ; « Un lieu public » trouve un bar connu'),
+    ('v0.2', 'Qui ramène quoi : les 6 choix et l’ajout à la main'),
+    ('v0.2', 'Clavier : le bouton OK au-dessus le ferme ; glisser la page le ferme aussi'),
+    ('v0.2', 'Mes invités : ajout depuis les contacts (autorisation demandée) et à la main'),
+    ('v0.2', 'Lien personnel ouvert : « Salut [prénom] 👋 », prénom déjà rempli ; la réponse se range sur la bonne ligne'),
+    ('v0.2', '« Envoyer » / « Relancer » ouvre WhatsApp avec le message déjà écrit'),
+    ('v0.2', '« Rappeler le groupe sur WhatsApp » ouvre WhatsApp avec le rappel déjà écrit'),
+    ('v0.2', 'Après avoir répondu : « Ajouter à mon agenda » crée l’événement dans l’agenda du téléphone'),
+]
+
 RECETTE_HEARTHAVEN = [
     ('v0.1', 'Plus de carrés sur le sol, près de la plage comme sur la roche'),
     ('v0.1', 'Plus de carrés ni de cassures dans la mer, au bord comme au large'),
@@ -103,6 +122,8 @@ for v, t in recette_shivr(shi):
 if len(sys.argv) > 5:
     for v, t in recette_applinature(open(sys.argv[5]).read()):
         sortie['elements'].append({'cle': cle('recette', 'applinature', v, t), 'groupe': 'recette', 'appli': 'applinature', 'qui': 'Tous', 'version': v, 'titre': propre(t)})
+for v, t in RECETTE_GUINCHE:
+    sortie['elements'].append({'cle': cle('recette', 'guinche', v, t), 'groupe': 'recette', 'appli': 'guinche', 'qui': 'Tous', 'version': v, 'titre': t})
 for v, t in RECETTE_HEARTHAVEN:
     sortie['elements'].append({'cle': cle('recette', 'hearthaven', v, t), 'groupe': 'recette', 'appli': 'hearthaven', 'qui': 'Yvan', 'version': v, 'titre': t})
 json.dump(sortie, open(sys.argv[3], 'w'), ensure_ascii=False, indent=1)
