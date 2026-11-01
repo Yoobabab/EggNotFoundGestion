@@ -55,11 +55,11 @@ RECETTE_GUINCHE = [
     ('v0.2', '« Rappeler le groupe sur WhatsApp » ouvre WhatsApp avec le rappel déjà écrit'),
     ('v0.2', 'Après avoir répondu : « Ajouter à mon agenda » crée l’événement dans l’agenda du téléphone'),
     ('v0.3', 'Fête+ : choisir un thème payant ouvre l’écran Fête+ ; « Activer (test) » puis le thème s’applique'),
-    ('v0.3', 'Créer une soirée avec une cagnotte (nom, objectif, montant conseillé) : le calcul « tu reçois environ » s’affiche'),
-    ('v0.3', 'Cagnotte › « Activer les paiements » : la page Stripe s’ouvre (mode test), on revient dans l’appli à la fin'),
-    ('v0.3', 'Invité : participer 20 € avec la carte de test 4242 4242 4242 4242 ; le montant apparaît chez l’organisateur'),
-    ('v0.3', 'Invité : « Cacher mon montant » → les autres invités voient le prénom sans le montant'),
-    ('v0.3', 'Clôturer puis rouvrir la cagnotte ; « Récupérer l’argent » ouvre l’espace Stripe'),
+    ('v0.3', 'Créer une soirée avec cagnotte : choisir Revolut, coller son lien revolut.me/… → « Lien Revolut reconnu »'),
+    ('v0.3', 'Invité : « Participer 20 € avec Revolut » ouvre Revolut ; puis « J’ai participé » → le montant apparaît chez l’organisateur'),
+    ('v0.3', 'Invité : « Cacher mon montant » puis « Je me suis trompé, annuler »'),
+    ('v0.3', 'Organisateur : retirer une ligne avec ✕, « Changer de lien », clôturer puis rouvrir la cagnotte'),
+    ('v0.3', 'Lien PayPal.me : le montant choisi est déjà rempli dans PayPal'),
 ]
 
 RECETTE_HEARTHAVEN = [
