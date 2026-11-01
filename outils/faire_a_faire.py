@@ -9,6 +9,8 @@ def cle(*parts):
 
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
+    ('guinche', 'Greg', 'Stripe en mode test pour Guinche : créer le compte Stripe avec admin@eggnotfound.fr, activer Connect, puis suivre le guide de Claude (clé secrète de test dans les secrets Supabase, webhook vers stripe-webhook)'),
+    ('guinche', 'Tous', 'Avant la sortie de Guinche : retirer « Activer (gratuit pendant les tests) » de Fête+ (fonction fete_plus_test) et brancher les vrais achats (RevenueCat, compte Apple développeur)'),
     ('guinche', 'Yvan', 'Connexion Facebook de Guinche : avec ton Facebook, créer l’appli « Guinche » sur developers.facebook.com (cas d’usage Facebook Login, e-mail de contact admin@eggnotfound.fr, portefeuille business « Egg Not Found » si possible), ajouter Greg en admin, puis prévenir Claude pour la suite (adresse de retour, fournisseur dans Supabase)'),
     ('studio', 'Greg', 'Clés SMTP Brevo à renouveler (elles expirent au bout d’un an, sinon les e-mails de connexion ne partent plus) : « supabase » le 9 oct. 2027, « applibd » le 11 oct. 2027, « Applidates » (Tikette) le 12 oct. 2027, « guinche » vers le 1er nov. 2027 → Brevo › SMTP & API › SMTP › nouvelle clé, puis la recoller dans Supabase › Authentication › Emails › SMTP du bon projet'),
     ('guinche', 'Greg', 'Supabase de Guinche : finir les réglages (modèles d’e-mail « Confirm signup » et « Magic Link » avec le code, fonction connexion-pseudo avec « Verify JWT » décoché, adresses de retour exp://** et guinche://**, connexion anonyme désactivée), puis créer son compte dans l’appli'),
@@ -53,6 +55,12 @@ RECETTE_GUINCHE = [
     ('v0.2', '« Envoyer » / « Relancer » ouvre WhatsApp avec le message déjà écrit'),
     ('v0.2', '« Rappeler le groupe sur WhatsApp » ouvre WhatsApp avec le rappel déjà écrit'),
     ('v0.2', 'Après avoir répondu : « Ajouter à mon agenda » crée l’événement dans l’agenda du téléphone'),
+    ('v0.3', 'Fête+ : choisir un thème payant ouvre l’écran Fête+ ; « Activer (test) » puis le thème s’applique'),
+    ('v0.3', 'Créer une soirée avec une cagnotte (nom, objectif, montant conseillé) : le calcul « tu reçois environ » s’affiche'),
+    ('v0.3', 'Cagnotte › « Activer les paiements » : la page Stripe s’ouvre (mode test), on revient dans l’appli à la fin'),
+    ('v0.3', 'Invité : participer 20 € avec la carte de test 4242 4242 4242 4242 ; le montant apparaît chez l’organisateur'),
+    ('v0.3', 'Invité : « Cacher mon montant » → les autres invités voient le prénom sans le montant'),
+    ('v0.3', 'Clôturer puis rouvrir la cagnotte ; « Récupérer l’argent » ouvre l’espace Stripe'),
 ]
 
 RECETTE_HEARTHAVEN = [
