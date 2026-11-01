@@ -38,4 +38,4 @@ Site réservé à Greg et Yvan (studio Egg Not Found, 50/50) : chiffres de toute
 
 ## Règle du studio
 
-Chaque appli a son espace admin (admin@ / contact@eggnotfound.fr) et apparaît dans cette console. Applis à brancher : Shivr, Panier Fantôme, robi. AppliNature : demandes, recette et robot IA dans la console (30 oct. 2026) ; chiffres pas encore reliés (pas de serveur).
+Chaque appli a son espace admin (admin@ / contact@eggnotfound.fr) et apparaît dans cette console. **Connexion (Greg, 1er nov. 2026)** : toutes les applis proposent les mêmes choix que Tikette (numéro par SMS, Apple, Google, Facebook, e-mail) ; projets Google Cloud et Meta créés avec le compte admin@eggnotfound.fr (Google : compte Google gratuit sur l'adresse existante, jamais Google Workspace payant), un projet par appli, sans logo sur l'écran Google (sinon validation). Applis à brancher : Shivr, Panier Fantôme, robi. AppliNature : demandes, recette et robot IA dans la console (30 oct. 2026) ; chiffres pas encore reliés (pas de serveur).
