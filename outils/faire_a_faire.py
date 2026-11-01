@@ -9,7 +9,8 @@ def cle(*parts):
 
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
-    ('guinche', 'Greg', 'Guinche : lancer le script SQL version 4 (cagnotte par lien), puis faire les tests de la recette v0.3 (cagnotte par lien perso)'),
+    ('guinche', 'Greg', 'Guinche : brancher la connexion Google puis Apple (prévu le 2 nov. 2026)'),
+    ('guinche', 'Greg', 'Guinche : faire les tests de la recette v0.3 (cagnotte par lien perso) — script SQL v4 lancé le 1er nov.'),
     ('guinche', 'Tous', 'Guinche, revenus en plus de Fête+ (retenus le 1er nov.) : lieux réservés via les partenaires de Tikette, liens affiliés costumes et déco, thèmes de saison à 0,99 €'),
     ('guinche', 'Tous', 'Avant la sortie de Guinche : retirer « Activer (gratuit pendant les tests) » de Fête+ (fonction fete_plus_test) et brancher les vrais achats (RevenueCat, compte Apple développeur)'),
     ('guinche', 'Yvan', 'Connexion Facebook de Guinche : avec ton Facebook, créer l’appli « Guinche » sur developers.facebook.com (cas d’usage Facebook Login, e-mail de contact admin@eggnotfound.fr, portefeuille business « Egg Not Found » si possible), ajouter Greg en admin, puis prévenir Claude pour la suite (adresse de retour, fournisseur dans Supabase)'),
