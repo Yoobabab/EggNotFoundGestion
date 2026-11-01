@@ -10,7 +10,7 @@ Site réservé à Greg et Yvan (studio Egg Not Found, 50/50) : chiffres de toute
 
 ## Décision à appliquer plus tard (Greg, 29 oct. 2026)
 
-**Créer un projet Supabase à part pour la gestion du studio et toutes les autres applis dès qu'on pourra payer un abonnement** (Supabase Pro ≈ 25 $/mois ; l'offre gratuite est limitée à 2 projets actifs, déjà pris par Tikette et Shivr). Ce jour-là : déplacer `admins`, `offres`, `avances`, le bucket `justificatifs` et la console vers ce projet ; chaque appli y fera remonter ses chiffres.
+**Créer un projet Supabase à part pour la gestion du studio et toutes les autres applis dès qu'on pourra payer un abonnement** (Supabase Pro ≈ 25 $/mois ; l'offre gratuite est limitée à 2 projets actifs : depuis le 1er nov. 2026 ce sont Tikette et Guinche, le projet AppliCard/Shivr est en pause — réactivable 90 jours, ensuite sauvegarde à restaurer). Confirmé par Greg le 1er nov. 2026 : la console (« le CRM ») sera séparée de Tikette, comme Guinche l'a été. Ce jour-là : déplacer `admins`, `offres`, `avances`, le bucket `justificatifs` et la console vers ce projet ; chaque appli y fera remonter ses chiffres.
 
 ## Contenu du site (v2, 29 oct. 2026, validé par Greg)
 
