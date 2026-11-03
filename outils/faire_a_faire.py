@@ -9,7 +9,11 @@ def cle(*parts):
 
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
-    ('guinche', 'Greg', 'Guinche : brancher la connexion Google puis Apple (prévu le 2 nov. 2026)'),
+    ('guinche', 'Greg', 'Guinche : lancer le script SQL version 6 (jeux, Crush, sécurité), puis tester la recette v0.4'),
+    ('guinche', 'Greg', 'Guinche : recopier la fonction connexion-pseudo (anti-devinette des pseudos) dans Supabase'),
+    ('guinche', 'Tous', 'Avant la sortie de Guinche : retirer crush_achat_test (« Voir qui » gratuit) et brancher l’achat intégré à 1,99 € ; notifications push pour la révélation du Crush à 11 h'),
+    ('guinche', 'Tous', 'Guinche : lire régulièrement la table signalements (Crush) dans Supabase'),
+    ('guinche', 'Greg', 'Guinche : brancher la connexion Google puis Apple'),
     ('guinche', 'Greg', 'Guinche : faire les tests de la recette v0.3 (cagnotte par lien perso) — script SQL v4 lancé le 1er nov.'),
     ('guinche', 'Tous', 'Guinche, revenus en plus de Fête+ (retenus le 1er nov.) : lieux réservés via les partenaires de Tikette, liens affiliés costumes et déco, thèmes de saison à 0,99 €'),
     ('guinche', 'Tous', 'Avant la sortie de Guinche : retirer « Activer (gratuit pendant les tests) » de Fête+ (fonction fete_plus_test) et brancher les vrais achats (RevenueCat, compte Apple développeur)'),
@@ -63,6 +67,16 @@ RECETTE_GUINCHE = [
     ('v0.3', 'Invité : « Cacher mon montant » puis « Je me suis trompé, annuler »'),
     ('v0.3', 'Organisateur : retirer une ligne avec ✕, « Changer de lien », clôturer puis rouvrir la cagnotte'),
     ('v0.3', 'Lien PayPal.me : le montant choisi est déjà rempli dans PayPal'),
+    ('v0.4', 'Killer : 3 invités « Je viens » (dont toi depuis ton invitation) → Jeux de la soirée › Killer › Lancer'),
+    ('v0.4', 'Killer : un joueur ouvre l’invitation › « Jouer au Killer » → voit sa cible et sa mission (touche = cacher)'),
+    ('v0.4', 'Killer : « Mission réussie » → la cible voit « X dit t’avoir eu » → « C’est vrai » ; le tueur récupère la cible suivante'),
+    ('v0.4', 'Killer : l’organisateur retire un joueur (✕), puis « Terminer la partie » → journal à partager'),
+    ('v0.4', 'Le tel tourne : Passe le tel (compte à rebours 5 s), Tu préfères, Je n’ai jamais'),
+    ('v0.4', 'Crush : répondre « Je viens » connecté → Crush de soirée → cocher les 3 cases → Participer (refusé si moins de 18 ans)'),
+    ('v0.4', 'Crush : choisir une personne ; le lendemain 11 h, si c’est réciproque → « C’est un match » et discussion'),
+    ('v0.4', 'Crush : « Voir qui · 1,99 € » (gratuit pendant les tests), bloquer, signaler, quitter le Crush'),
+    ('v0.4', 'Modifier une soirée déjà passée (ajouter une cagnotte) : ça s’enregistre ; une cagnotte clôturée reste clôturée'),
+    ('v0.4', 'Profil : la date de naissance ne se modifie plus'),
 ]
 
 RECETTE_HEARTHAVEN = [
