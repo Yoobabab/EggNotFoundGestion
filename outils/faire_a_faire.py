@@ -10,7 +10,7 @@ def cle(*parts):
 # Ce que Claude a demandé et qui n'est pas encore confirmé fait (mettre à jour à chaque séance).
 DEMANDES = [
     ('guinche', 'Greg', 'Guinche : lancer le script SQL version 6 (jeux, Crush, sécurité), puis tester la recette v0.4'),
-    ('guinche', 'Greg', 'Guinche, Le Dîner de chefs : lancer supabase/diner.sql dans Supabase, ajouter le secret ANTHROPIC_API_KEY et déployer la fonction diner-resume (Verify JWT coché), puis tester la recette v0.5'),
+    ('guinche', 'Greg', 'Guinche, Le Dîner de chefs : relancer supabase/diner.sql (version du 4 nov. après-midi : liens perso protégés), puis tester la recette v0.5'),
     ('guinche', 'Greg', 'Guinche : recopier la fonction connexion-pseudo (anti-devinette des pseudos) dans Supabase'),
     ('guinche', 'Tous', 'Avant la sortie de Guinche : retirer crush_achat_test (« Voir qui » gratuit) et brancher l’achat intégré à 1,99 € ; notifications push pour la révélation du Crush à 11 h'),
     ('guinche', 'Tous', 'Guinche : lire régulièrement la table signalements (Crush) dans Supabase'),
@@ -84,7 +84,8 @@ RECETTE_GUINCHE = [
     ('v0.5', 'Lancer une saison avec 3 chefs ou plus (deux prénoms identiques refusés) ; choisir des dates'),
     ('v0.5', 'Envoyer son lien à un chef par WhatsApp : sa page s’ouvre dans le navigateur sans compte, il peut choisir sa date et son lieu'),
     ('v0.5', 'Après la date d’un dîner : « Note le dîner de … » apparaît sur l’accueil et sur la page du chef ; on ne peut pas noter son propre dîner ni un dîner pas encore passé'),
-    ('v0.5', 'L’organisateur ne voit que le nombre de notes reçues, jamais les notes'),
+    ('v0.5', 'L’organisateur ne voit que le nombre de notes reçues, jamais les notes ; une fois qu’un chef a ouvert son lien, l’organisateur voit « ✓ a ouvert son lien » et l’ancien lien ne marche plus ailleurs'),
+    ('v0.5', 'Fluidité : revenir sur un écran déjà vu (accueil, soirée, invitation, saison) l’affiche tout de suite, sans roue de chargement ; relancer l’appli affiche l’accueil sans attendre'),
     ('v0.5', 'Finale : classement révélé à tous, récap voix off écrit par l’IA, « Écouter » le lit à voix haute, « Partager le classement »'),
 ]
 
