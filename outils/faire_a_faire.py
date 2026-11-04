@@ -11,7 +11,7 @@ def cle(*parts):
 DEMANDES = [
     ('guinche', 'Greg', 'Guinche : lancer le script SQL version 6 (jeux, Crush, sécurité), puis tester la recette v0.4'),
     ('guinche', 'Greg', 'Guinche, Le Dîner de chefs : relancer supabase/diner.sql (version du 4 nov. après-midi : liens perso protégés), puis tester la recette v0.5'),
-    ('guinche', 'Greg', 'Guinche : recopier la fonction connexion-pseudo (anti-devinette des pseudos) dans Supabase'),
+    ('guinche', 'Greg', 'Guinche, sécurité : lancer supabase/securite.sql (après diner.sql), recopier les fonctions connexion-pseudo et diner-resume, puis les réglages Auth (mot de passe 10 avec lettres et chiffres, e-mail sécurisé, anonymes off) et supprimer les fonctions Stripe inutilisées'),
     ('guinche', 'Tous', 'Avant la sortie de Guinche : retirer crush_achat_test (« Voir qui » gratuit) et brancher l’achat intégré à 1,99 € ; notifications push pour la révélation du Crush à 11 h'),
     ('guinche', 'Tous', 'Guinche : lire régulièrement la table signalements (Crush) dans Supabase'),
     ('guinche', 'Greg', 'Guinche : brancher la connexion Google puis Apple'),
@@ -50,6 +50,9 @@ DEMANDES = [
 
 # Recette d'Hearthaven (pas de CLAUDE.md dans un dépôt : le projet Godot vit sur le PC d'Yvan). Mettre à jour à chaque version.
 RECETTE_GUINCHE = [
+    ('v0.5.1', 'Créer un compte avec un mot de passe trop simple (azerty123…) : refusé avec une phrase claire'),
+    ('v0.5.1', 'Après la mise à jour, on reste connecté (la session est maintenant chiffrée sur le téléphone)'),
+    ('v0.5.1', 'Avec un compte qui n’est pas admin@ ou contact@ : l’achat test Fête+ / Crush affiche « réservé à l’équipe »'),
     ('v0.2', 'Créer un compte par e-mail : le code arrive (e-mail aux couleurs de Guinche) et il marche'),
     ('v0.2', 'Se déconnecter puis se reconnecter avec son pseudo et son mot de passe : les soirées sont toujours là'),
     ('v0.2', 'Mot de passe oublié : le code arrive, le nouveau mot de passe est enregistré'),
